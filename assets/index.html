@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="tg" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy 17th Birthday, Rukhshona ❤️ | A Cinematic Luxury Experience</title>
+    
+    <meta name="description" content="A cinematic luxury birthday experience crafted exclusively for Rukhshona by Jovidon.">
+    <meta name="author" content="Jovidon Kulobiev">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader-screen" aria-label="Loading Experience">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 100 100" class="rotating-ring">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="70 200"/>
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#F5D76E" />
+                            <stop offset="100%" stop-color="#FFF8F0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="loader-initials">JR</span>
+            </div>
+            <h2 class="loader-title">For Rukhshona</h2>
+            <div class="loader-progress-container">
+                <div id="loader-progress-bar"></div>
+            </div>
+            <span id="loader-percentage">0%</span>
+        </div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="mouse-trail-container" id="mouseTrail"></div>
+
+    <canvas id="universe-canvas"></canvas>
+    <canvas id="flowers-canvas"></canvas>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- HERO -->
+            <section id="hero-section" class="cinematic-section">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="badge-tag glass-panel">
+                        <i class="fa-solid fa-sparkles"></i> Special 17th Birthday Edition
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="word">Happy</span>
+                        <span class="word">17th</span>
+                        <span class="word">Birthday</span>
+                        <span class="word highlight-name">Rukhshona</span>
+                    </h1>
+                    <p class="hero-subtitle">An infinite universe of love, crafted exclusively for you by Jovidon.</p>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Explore Magic</span>
+                    <div class="mouse-icon"><div class="wheel"></div></div>
+                </div>
+            </section>
+
+            <!-- OPEN HEART -->
+            <section id="heart-section" class="cinematic-section flex-center">
+                <div class="glass-card heart-glass-card text-center">
+                    <h2>Unlock The Magic</h2>
+                    <p>Step inside a world created from the depths of my heart for my beloved princess.</p>
+                    <button id="open-heart-btn" class="magnetic-btn primary-glow-btn">
+                        <span class="btn-text">Open My Heart ❤️</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- LOVE LETTER -->
+            <section id="letter-section" class="cinematic-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="sub-heading">Intimate Words</span>
+                        <h2>A Letter To My Dearest</h2>
+                    </div>
+                    <div class="letter-wrapper glass-panel">
+                        <div class="letter-seal"><i class="fa-solid fa-heart"></i></div>
+                        <div class="letter-paper">
+                            <div class="handwriting-content" id="typed-letter">
+                                My dearest Rukhshona, <br><br>
+                                As you celebrate your 17th birthday today, I find myself reflecting on the incredible light you bring into every single moment of my life. Your smile illuminates my darkest days, and your gentle soul inspires me to dream bigger and love deeper.<br><br>
+                                May this year bring you endless joy, breathtaking adventures, and all the success your heart desires. I am infinitely grateful to share this journey and build our future together.<br><br>
+                                Forever and always yours,<br>
+                                <span class="signature">Jovidon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COUNTER -->
+ <section id="counter-section" class="cinematic-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="sub-heading">Time Standing Still</span>
+            <h2>Every Moment With You Matters</h2>
+        </div>
+        <div class="counter-grid">
+            <div class="counter-card glass-panel">
+                <span id="count-days" class="counter-number">7</span>
+                <span class="counter-label">Days</span>
+            </div>
+            <div class="counter-card glass-panel">
+                <span id="count-hours" class="counter-number">00</span>
+                <span class="counter-label">Hours</span>
+            </div>
+            <div class="counter-card glass-panel">
+                <span id="count-minutes" class="counter-number">00</span>
+                <span class="counter-label">Minutes</span>
+            </div>
+            <div class="counter-card glass-panel">
+                <span id="count-seconds" class="counter-number">00</span>
+                <span class="counter-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- GALLERY -->
+        <section id="gallery-section" class="cinematic-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="sub-heading">Cinematic Moments</span>
+            <h2>Our Shared Universe</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item tilt-card glass-panel" data-img="../gallery/images.jfif">
+                <div class="gallery-img-wrapper">
+                    <img src="../gallery/images.jfif" alt="Rukhshona Moment 1" loading="lazy">
+                </div>
+                <div class="gallery-caption"><span>First Glance</span></div>
+            </div>
+
+            <div class="gallery-item tilt-card glass-panel" data-img="../gallery/roma.jpeg">
+                <div class="gallery-img-wrapper">
+                    <img src="../gallery/roma.jpeg" alt="Rukhshona Moment 2" loading="lazy">
+                </div>
+                <div class="gallery-caption"><span>Golden Hour</span></div>
+            </div>
+
+            <div class="gallery-item tilt-card glass-panel" data-img="../gallery/piona.webp">
+                <div class="gallery-img-wrapper">
+                    <img src="../gallery/piona.webp" alt="Rukhshona Moment 3" loading="lazy">
+                </div>
+                <div class="gallery-caption"><span>Endless Smiles</span></div>
+            </div>
+
+            <div class="gallery-item tilt-card glass-panel" data-img="../gallery/lilia.jpg">
+                <div class="gallery-img-wrapper">
+                    <img src="../gallery/lilia.jpg" alt="Best moment" loading="lazy">
+                </div>
+                <div class="gallery-caption"><span>Precious Memories</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- LIGHTBOX -->
+            <div id="lightbox" class="lightbox-overlay">
+                <button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+                <div class="lightbox-content">
+                    <img id="lightbox-img" src="" alt="Fullscreen View">
+                </div>
+            </div>
+
+<!-- 100 REASONS -->
+<section id="reasons-section" class="cinematic-section">
+    <div class="container text-center">
+        <div class="section-header">
+            <span class="sub-heading">Infinite Adorationpan>
+            <h2>100 Reasons Why I Love You</h2>
+        </div>
+
+        <div class="love-letter-card glass-panel" id="reason-card">
+            <div class="letter-top-decoration">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            
+            <div class="reason-number">Reason <span id="reason-counter">1</span> of 100</div>
+            
+            <div class="reason-content">
+                <p id="reason-text" class="reason-text">Your laughter is my favorite sound in the entire world.</p>
+            </div>
+
+            <div class="letter-signature">
+                <span>With all my heart,</span>
+                <span class="sign-name">Jovidon</span>
+            </div>
+        </div>
+
+        <button id="next-reason-btn" class="magnetic-btn secondary-btn">
+            Next Reason ✨
+        </button>
+    </div>
+</section>
+
+            <!-- TIMELINE -->
+            <section id="timeline-section" class="cinematic-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="sub-heading">Chronicles of Us</span>
+                        <h2>Our Journey Together</h2>
+                    </div>
+                    <div class="timeline-wrapper">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="fa-solid fa-star"></i></div>
+                            <div class="timeline-content glass-panel">
+                                <span class="timeline-date">The Beginning</span>
+                                <h3>Our First Meeting in trening</h3>
+                                <p>The exact moment our paths crossed and my world changed forever.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="fa-solid fa-comment-heart"></i></div>
+                            <div class="timeline-content glass-panel">
+                                <span class="timeline-date">Day One</span>
+                                <h3>First Conversation </h3>
+                                <p>When every single word exchanged with you felt like pure magic.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="fa-solid fa-camera-retro"></i></div>
+                            <div class="timeline-content glass-panel">
+                                <span class="timeline-date">First time seing each other</span>
+                                <h3>Under your beautiful eyes Moonlight</h3>
+                                <p>I love you more than the moon and all the stars in the night sky.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="fa-solid fa-phone"></i></div>
+                            <div class="timeline-content glass-panel">
+                                <span class="timeline-date">Midnight Hours</span>
+                                <h3>First time not sleeping thinking about you</h3>
+                                <p>Talking until dawn without realizing how fast time was flying by.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"><i class="fa-solid fa-wine-glass"></i></div>
+                            <div class="timeline-content glass-panel">
+                                <span class="timeline-date">Magic Evening</span>
+                                <h3>First Official Date in trainig</h3>
+                                <p>The unforgettable evening that sealed our hearts together.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MUSIC PLAYER -->
+            <div id="floating-music-player" class="glass-panel">
+                <div class="album-art">
+                    <div class="vinyl-disc"></div>
+                </div>
+                <div class="track-info">
+                    <span class="track-title" id="track-title">Our Eternal Waltz</span>
+                    <span class="track-artist" id="track-artist">Cinematic Romance</span>
+                </div>
+                <div class="player-controls">
+                    <button id="prev-track-btn" aria-label="Previous Track"><i class="fa-solid fa-backward-step"></i></button>
+                    <button id="play-pause-btn" aria-label="Play/Pause"><i class="fa-solid fa-play" id="play-icon"></i></button>
+                    <button id="next-track-btn" aria-label="Next Track"><i class="fa-solid fa-forward-step"></i></button>
+                    <div class="volume-slider-wrapper">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.7">
+                    </div>
+                </div>
+                <audio id="bg-audio" preload="auto"></audio>
+            </div>
+
+            <!-- SURPRISE BUTTON -->
+            <section id="surprise-section" class="cinematic-section flex-center">
+                <div class="glass-card surprise-glass-card text-center">
+                    <span class="sub-heading">The Grand Finale</span>
+                    <h2>Ready For Your Special Gift?</h2>
+                    <p>Click below to unleash the magic of your 17th birthday celebration.</p>
+                    <button id="surprise-btn" class="magnetic-btn gold-glow-btn">
+                        <span>Open Your Birthday Gift 🎁</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- FINAL SCENE -->
+            <section id="final-section" class="cinematic-section flex-center">
+                <div class="container text-center">
+                    <div class="final-frame-wrapper glass-panel tilt-card">
+                        <div class="gold-frame-border">
+                            <img src="/gallery/images.jfif" alt="Jovidon and Rukhshona" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="final-text-content">
+                        <h2>Happy Birthday My Darling Rukhshona ❤️</h2>
+                        <p class="final-wish">Май ҳамаи орзуҳои ту амалӣ шаванд!</p>
+                        <p class="final-wish">Ташаккур ки ҳастӣ ва ҳаёти маро зебо мекунӣ.</p>
+                        <p class="final-love-quote">I love you more than words can describe.</p>
+                        <div class="signature-block">
+                            <span>Forever Yours,</span>
+                            <span class="signature-name">❤️ Jovidon</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ========== 3D BIRTHDAY CAKE MODAL (THE BEST) ========== -->
+    <div id="cake-modal" class="cake-modal">
+        <div class="cake-modal-content">
+            <button class="cake-close-btn" id="cake-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="cake-scene">
+                <div class="cake-platform"></div>
+                
+                <!-- 3D Cake -->
+                <div class="cake" id="birthday-cake">
+                    <!-- Bottom Layer -->
+                    <div class="cake-layer layer-bottom">
+                        <div class="frosting"></div>
+                        <div class="drip"></div>
+                    </div>
+                    <!-- Middle Layer -->
+                    <div class="cake-layer layer-middle">
+                        <div class="frosting"></div>
+                        <div class="drip"></div>
+                    </div>
+                    <!-- Top Layer -->
+                    <div class="cake-layer layer-top">
+                        <div class="frosting"></div>
+                        <div class="drip"></div>
+                    </div>
+                    
+                    <!-- Candles -->
+                    <div class="candles">
+                        <div class="candle c1"><div class="flame"></div></div>
+                        <div class="candle c2"><div class="flame"></div></div>
+                        <div class="candle c3"><div class="flame"></div></div>
+                        <div class="candle c4"><div class="flame"></div></div>
+                        <div class="candle c5"><div class="flame"></div></div>
+                        <div class="candle c6"><div class="flame"></div></div>
+                        <div class="candle c7"><div class="flame"></div></div>
+                    </div>
+                    
+                    <!-- Decorations -->
+                    <div class="cherry ch1"></div>
+                    <div class="cherry ch2"></div>
+                    <div class="cherry ch3"></div>
+                    <div class="gold-ribbon"></div>
+                </div>
+            </div>
+
+            <div class="cake-text">
+                <h2>Happy 17th Birthday, Rukhshona ❤️</h2>
+                <p>Make a wish, my love...</p>
+                <p class="wish-tg">Орзу кун, дӯстдоштаам...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
