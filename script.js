@@ -490,22 +490,22 @@ function initMusicPlayer() {
         {
             title: "Our Eternal Waltz",
             artist: "Cinematic Romance",
-            src: "sounds/gggg.mp3"
+            src: "gggg.mp3"
         },
         {
             title: "For My Rukhshona",
             artist: "Love Theme",
-            src: "sounds/hhhh.mp3"
+            src: "hhhh.mp3"
         },
         {
             title: "Midnight Whispers",
             artist: "Romantic Piano",
-            src: "sounds/my-song.mp3"
+            src: "my-song.mp3"
         },
         {
             title: "Stars Align",
             artist: "Dreamy Strings",
-            src: "sounds/ssss.mp3"
+            src: "ssss.mp3"
         }
     ];
 
